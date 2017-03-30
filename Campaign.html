@@ -1,0 +1,61 @@
+<!-- Use a templated HTML printing scriptlet to import common stylesheet. -->
+<?!= HtmlService.createHtmlOutputFromFile('Style').getContent(); ?>
+
+<!-- Below is the HTML code that defines the sidebar element structure. -->
+<div class="sidebar">
+  <div>
+  <p>Campaign:
+  <select class="campaign" name="campaign" id="campaign"></select></p>
+  <p>Template:
+  <select class="template" name="template">
+     <option value="T1">T1</option>
+     <option value="T2">T2</option>
+     <option value="T3">T3</option>
+  </select></p>
+  <p>Subject:
+  <input class="subject" name="subject" type="text"></p>
+  <p>&nbsp;</p>
+  <p><input class="action" name="action" value="Send Campaign" type="button" onClick="sendCampaign();"></p>
+  <p>&nbsp;</p>
+  <p class="result">After sending a campaign, you'll receive an email with a summary of results.</p>
+  </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+</script>
+<script>
+$(function () {
+  google.script.run.withSuccessHandler(setCampaigns).getCampaigns();
+});
+    
+function setCampaigns(values) {
+  $.each(values, function(key, value) {
+     $('#campaign')
+         .append($("<option></option>")
+         .attr("value",value)
+         .text(value));
+  });
+}
+
+function sendCampaign() {
+  var campaign = $(".campaign").val();
+  var template = $(".template").val();
+  var subject = $(".subject").val();
+  
+  $(".result").html('<font color="black">Sending...</font>');
+  
+  if ((campaign != "") && !((template == "T1") && (subject == ""))) {
+    google.script.run.withSuccessHandler(sendSucess).withFailureHandler(sendFailure).sendEmails(campaign,template,subject);
+  } else {
+    $(".result").html('<font color="red">Error: campaign or subject missing!</font>');
+  }
+}
+
+function sendSucess() {
+  $(".result").html('<font color="blue">Success: emails sent!</font>');
+}
+
+function sendFailure(e) {
+  $(".result").html('<font color="red">Error: ' + e.message + '</font>');
+}
+</script>
