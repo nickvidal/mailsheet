@@ -123,7 +123,7 @@ Setup Costs:
 
 With MailSheet, there are *no monthly charges* and *no email sending limit* (just the [one](https://support.google.com/a/answer/166852?hl=en) from *G Suite* itself).
 
-MailSheet is *open source*, so customization and integration is easier.
+MailSheet is *open source*, so customization and integration is much easier.
 
 Please contact: nickvidal AT gmail.com
 
