@@ -56,6 +56,7 @@ The next step is to create a Campaign using Google Docs:
 
 - Save the document as "*Test (T1)*".
 - You may make a copy as "*Test (T2)*" and another one as "*Test (T3)*".
+- MailSheet provides mail merge functionality for `{{First Name}}`, `{{Last Name}}`, and `{{Lead}}`.
 
 
 ### Create the Leads Spreadsheet
