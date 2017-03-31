@@ -109,6 +109,8 @@ Let's send your first campaign!
 
 I encourage you to use this saved time to do **better prospecting** and create more **personalized campaigns**.
 
+This will create a **better user experience** to everyone!
+
 I hope you enjoy using **MailSheet**!
 
 ![MailSheet](https://github.com/nickvidal/mailsheet/blob/master/mailsheet.png)
