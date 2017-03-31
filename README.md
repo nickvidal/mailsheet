@@ -24,7 +24,7 @@ If you need any help, feel free to contact me for [support](#support).
 
 ### Create the Unsubscribe Link
 
-When sending bulk email, you must provide an *Unsubscribe link* to comply with [CAN-SPAM](https://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
+When sending mass email or bulk email, you must provide an *Unsubscribe link* to comply with [CAN-SPAM](https://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
 
 A simple solution is to create a Google Form:
 - Create a new form called Unsubscribe on Google Forms.
@@ -105,6 +105,7 @@ Let's send your first campaign!
 - Watch the *Status* get updated row by row (from "*T1*" to "*T2*").
 - Go to your Gmail and look at the *Sent Mail* folder.
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
+- If you send the second and third templates ("*T2*" and "*T3*"), the emails will show up as a threaded conversation.
 
 ### Final Considerations
 
@@ -126,6 +127,8 @@ With MailSheet, there are *no monthly charges* and *no email sending limit* (jus
 
 MailSheet is *open source*, so customization and integration is much easier.
 
-Please contact nickvidal AT gmail.com for support.
+You may integrate MailSheet with Salesforce, Hubspot, Pipedrive, etc.
+
+Please contact nickvidal AT gmail.com.
 
 ![MailSheet](https://github.com/nickvidal/mailsheet/blob/master/mailsheet.png)
