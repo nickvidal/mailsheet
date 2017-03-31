@@ -17,7 +17,7 @@ Send Emails from Google Sheets
 
 The setup takes about 30 minutes.
 
-This is well worth it because in the long-run MailSheet will help you save thousands of hours. 
+This is well worth it because in the long-run MailSheet will help you save time. 
 
 If you need any help, feel free to contact me for [support](#support).
 
