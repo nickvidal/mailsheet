@@ -71,6 +71,20 @@ function sendEmails(campaign, template, subject) {
   var doc = DriveApp.getFilesByName(campaign + " (" + template + ")");
   var docId = doc.hasNext() ? doc.next().getId() : 0;
   
+  var nextStatus = "";
+  
+  switch (template) {
+    case "T1":
+      nextStatus = "T2";
+    break;
+    case "T2":
+      nextStatus = "T3";
+    break;
+    case "T3":
+      nextStatus = "T4";
+    break;
+  }
+  
   if (docId == 0) {
     // Template missing
     logFailed.push("'" + campaign + " (" + template + ")' missing.");
@@ -84,19 +98,6 @@ function sendEmails(campaign, template, subject) {
           
       if ((campaignName == campaign) && (status == template)) {
         sendEmail(row, docId, subject);
-        
-        var nextStatus = "";
-        switch (status) {
-          case "T1":
-            nextStatus = "T2";
-          break;
-          case "T2":
-            nextStatus = "T3";
-          break;
-          case "T3":
-            nextStatus = "T4";
-          break;
-        }
         
         leadSheet.getRange(2 + i, 3).setValue(nextStatus);
         var contacted = getDateString();
