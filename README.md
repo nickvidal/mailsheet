@@ -17,11 +17,8 @@ Send Emails from Google Sheets
 
 The setup takes about 30 minutes. This is well worth it because in the long-run MailSheet will help you save thousands of hours. 
 
-If you need any help, feel free to email nickvidal AT gmail.com:
-- For a single user, the setup cost is U$100.
-- For an organization, the cost is U$500 (I'll deploy MailSheet as a Web app so that all users can use it). 
+If you need any help, feel free to contact me for [support]((#Support).
 
-With MailSheet, there are *no monthly charges* and *no email sending limits* (just the [one](https://support.google.com/a/answer/166852?hl=en) from G Suite itself, which is pretty high).
 
 ### Create the Unsubscribe Link
 
@@ -112,8 +109,20 @@ Let's send your first campaign!
 
 I encourage you to use this saved time to do **better prospecting** and create more **personalized campaigns**.
 
-This will create a **better user experience** to everyone!
+This will create a **better experience** for everyone!
 
 I hope you enjoy using **MailSheet**!
+
+### Support
+
+Setup Costs:
+- For a single user, the setup cost is U$100.
+- For an organization, the cost is U$500 (I'll deploy MailSheet as a Web app so that all users can use it).
+
+With MailSheet, there are *no monthly charges* and *no email sending limits* (just the [one](https://support.google.com/a/answer/166852?hl=en) from *G Suite* itself).
+
+MailSheet is *open source*, so customization and integration is easier.
+
+If you need any help, please contact me: nickvidal AT gmail.com
 
 ![MailSheet](https://github.com/nickvidal/mailsheet/blob/master/mailsheet.png)
