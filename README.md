@@ -30,7 +30,6 @@ A simple solution is to create a Google Form:
 - Create a new form called Unsubscribe on Google Forms.
 - Edit the first question to become a *Short answer text*.
 - Edit the question to something like: "*Please enter your email address below to unsubscribe*".
-- Under *Settings* (gear icon), don't collect email address and don't require sign in. 
 - From the menu: Responses > ... > Select response destination > Create a new spreadsheet.
 - From the menu: Responses > View responses in Sheets.
 - In the Unsubscribe sheet, add a third column called "*Status*".
