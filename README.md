@@ -110,7 +110,7 @@ Let's send your first campaign!
 
 I encourage you to use this saved time to do **better prospecting** and create more **personalized campaigns**.
 
-This will create a **better experience** for everyone!
+This will provide a **better experience** for everyone!
 
 I hope you enjoy using **MailSheet**!
 
