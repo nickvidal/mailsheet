@@ -99,16 +99,16 @@ Let's send your first campaign!
 - Select "*T1*" as the Template.
 - Enter a *Subject* for the Email.
 - Click on the *Send Campaign* button.
-- Watch the *Status* get updated row by row.
+- Watch the *Status* get updated row by row (from "*T1*" to "*T2*").
 - Go to your Gmail and look at the *Sent Mail* folder.
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
 
 ### Final Considerations
 
-**MailSheet** allows you to be **more organized** and **save time** on repetitive tasks.
+**MailSheet** allows you to be **more organized** and **save time**.
 
 I encourage you to use this saved time to do **better prospecting** and create more **personalized campaigns**.
 
-I hope you enjoy using MailSheet!
+I hope you enjoy using **MailSheet**!
 
 ![MailSheet](https://github.com/nickvidal/mailsheet/blob/master/mailsheet.png)
