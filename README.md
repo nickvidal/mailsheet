@@ -125,6 +125,6 @@ With MailSheet, there are *no monthly charges* and *no email sending limit* (jus
 
 MailSheet is *open source*, so customization and integration is much easier.
 
-Please contact: nickvidal AT gmail.com
+Please contact nickvidal AT gmail.com for support.
 
 ![MailSheet](https://github.com/nickvidal/mailsheet/blob/master/mailsheet.png)
