@@ -64,7 +64,7 @@ Finally, you are ready to create your Leads sheet.
 
 - Create a new spreadsheet on Google Sheets
 - Add the following columns in the first row:
-  - Domain, Lead, Status, Campaign, Contacted, First Name, Last Name, Title, Email
+  - Owner, Lead, Status, Campaign, Contacted, First Name, Last Name, Title, Email
 - Freeze the first row:
   - Select the first row
   - From the menu: View > Freeze > 1 row
@@ -75,8 +75,6 @@ Finally, you are ready to create your Leads sheet.
   - Replace the following strings:
     - `[YOUR ADDRESS]`
     - `[YOUR UNSUBSCRIBE LINK]`
-    - `[YOUR NAME] <[YOUR EMAIL]>`
-    - `[YOUR NAME]`
     - `[YOUR UNSUBSCRIBE SHEET]`
 - Create file Campaign.html:
   - From the menu: File > New > Html file
