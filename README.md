@@ -6,7 +6,7 @@ Send Emails from Google Sheets
 
 ## Overview
 
-**MailSheet** integrates **Google Sheets**, **Google Docs**, and **Gmail** to provide a simple yet powerful **marketing automation** solution.
+**MailSheet** perfectly integrates with **G Suite** (**Google Sheets**, **Google Docs**, and **Gmail**) to provide a simple yet powerful **marketing automation** solution.
 
 * Use **Google Sheets** to organize a list of leads.
 * Create campaign templates using **Google Docs**.
