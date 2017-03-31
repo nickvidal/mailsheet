@@ -124,7 +124,7 @@ With MailSheet, there are *no monthly charges* and *no email sending limit* (jus
 
 MailSheet is *open source*, so customization and integration is much easier.
 
-You may integrate MailSheet with Salesforce, Hubspot, Pipedrive, etc.
+You may integrate MailSheet with your CRM (Salesforce, Hubspot, Pipedrive, etc).
 
 Please contact nickvidal AT gmail.com.
 
