@@ -24,7 +24,7 @@ If you need any help, feel free to contact me for [support](#support).
 
 ### Create the Unsubscribe Link
 
-When sending automated emails, you must provide an *Unsubscribe link* to comply with [CAN-SPAM](https://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
+When sending bulk email, you must provide an *Unsubscribe link* to comply with [CAN-SPAM](https://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
 
 A simple solution is to create a Google Form:
 - Create a new form called Unsubscribe on Google Forms.
