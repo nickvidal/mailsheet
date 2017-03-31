@@ -132,8 +132,9 @@ function sendEmails(campaign, template, subject) {
 }
 
 function sendEmail(row, docId, subject) {
-  var email = Session.getActiveUser().getEmail();
+  var myEmail = Session.getActiveUser().getEmail();
   
+  var rep = row[0];
   var lead = row[1];
   var status = row[2];
   var firstName = row[5];
@@ -147,7 +148,7 @@ function sendEmail(row, docId, subject) {
   body = body.replace(/{{First Name}}/gi, firstName);
   body = body.replace(/{{Last Name}}/gi, lastName);
     
-  body += "\r\r\r\r" +
+  body += "\r" + rep + "\r\r\r\r" +
           "--\r" +
           "[YOUR ADDRESS]\r\r" +
           "To unsubscribe: [YOUR UNSUBSCRIBE LINK]";
@@ -166,7 +167,7 @@ function sendEmail(row, docId, subject) {
     
     var raw =
       'MIME-Version: 1.0' + '\r\n' +
-      'From: ' + '[YOUR NAME] <[YOUR EMAIL]>' + '\r\n' +
+      'From: ' + rep + ' <' + myEmail + '>' + '\r\n' +
       'To: ' + email + '\r\n' +
       'Subject: ' + subject + '\r\n' +
       'Content-Type: text/plain; charset=UTF-8' + '\r\n' +
@@ -190,7 +191,7 @@ function sendEmail(row, docId, subject) {
     
   } else {
     // First email
-    GmailApp.sendEmail(email, subject, body, { name: "[YOUR NAME]" });
+    GmailApp.sendEmail(email, subject, body, { name: rep });
   }
 }
 
