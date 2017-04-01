@@ -70,6 +70,8 @@ function sendEmails(campaign, template, subject) {
   
   var doc = DriveApp.getFilesByName(campaign + " (" + template + ")");
   var docId = doc.hasNext() ? doc.next().getId() : 0;
+
+  var contacted = getDateString();
   
   var nextStatus = "";
   
@@ -100,7 +102,6 @@ function sendEmails(campaign, template, subject) {
         sendEmail(row, docId, subject);
         
         leadSheet.getRange(2 + i, 3).setValue(nextStatus);
-        var contacted = getDateString();
         leadSheet.getRange(2 + i, 5).setValue(contacted);
         logSent.push(lead + ": '" + campaign + " (" + template + ")' sent to <" + sentTo + ">.");
       }
