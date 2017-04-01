@@ -36,7 +36,7 @@ A simple solution is to create a Google Form:
   - The Document ID is the code at `[YOUR UNSUBSCRIBE SHEET]`
 - Create an Unsubscribe Link: `[YOUR UNSUBSCRIBE LINK]`
   - If you have a website, you can redirect something like https://example.com/unsubscribe to your Unsubscribe Form.
-  - Alternatively, you may also use the Google Form directly as your unsubscribe link. Be sure to use the *Preview* link.
+  - Alternatively, you may use the Google Form directly as your unsubscribe link. Be sure to use the *Preview* link.
 
 
 ### Create a Campaign
