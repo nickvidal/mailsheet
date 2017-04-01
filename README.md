@@ -17,9 +17,6 @@ Send Emails from Google Sheets
 
 The setup takes about 30 minutes.
 
-If you need any help, feel free to contact me for [support](#support).
-
-
 ### Create the Unsubscribe Link
 
 When sending mass email or bulk email, you must provide an *Unsubscribe link* to comply with [CAN-SPAM](https://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
@@ -111,19 +108,5 @@ I encourage you to use this saved time to do **better prospecting** and create m
 This will provide a **better experience** for everyone!
 
 I hope you enjoy using **MailSheet**!
-
-### Support
-
-Setup Costs:
-- For a single user: U$100.
-- For an organization: U$500 (I'll deploy MailSheet as a Web app so that all users can use it).
-
-With MailSheet, there are *no monthly charges* and *no email sending limit* (just the [one](https://support.google.com/a/answer/166852?hl=en) from *G Suite* itself).
-
-MailSheet is *open source*, so customization and integration is much easier.
-
-You may integrate MailSheet with your CRM (Salesforce, Hubspot, Pipedrive, etc).
-
-Please contact nickvidal AT gmail.com.
 
 ![MailSheet](https://github.com/nickvidal/mailsheet/blob/master/mailsheet.png)
