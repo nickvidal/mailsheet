@@ -135,6 +135,7 @@ function sendEmail(row, docId, subject) {
   var myEmail = Session.getActiveUser().getEmail();
   
   var myName = row[0];
+  var myFirstName = myName.substring(0, myName.indexOf(" "));
   var lead = row[1];
   var status = row[2];
   var firstName = row[5];
@@ -148,7 +149,7 @@ function sendEmail(row, docId, subject) {
   body = body.replace(/{{First Name}}/gi, firstName);
   body = body.replace(/{{Last Name}}/gi, lastName);
     
-  body += "\r" + myName + "\r\r\r\r" +
+  body += "\r" + myFirstName + "\r\r\r\r" +
           "--\r" +
           "[YOUR ADDRESS]\r\r" +
           "To unsubscribe: [YOUR UNSUBSCRIBE LINK]";
