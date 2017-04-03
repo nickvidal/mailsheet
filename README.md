@@ -15,7 +15,7 @@ Send Emails from Google Sheets
 
 ## Quick Setup
 
-The quick setup takes about 15 minutes.
+The quick setup takes about 10 minutes.
 
 ### Create the First Template
 
@@ -66,7 +66,7 @@ If you plan to send bulk email, please read the next section for the complete se
 
 ## Complete Setup
 
-The complete setup takes 15 more minutes.
+The complete setup takes 10 more minutes.
 
 ### Create Your Unsubscribe Link
 
@@ -86,7 +86,7 @@ A simplistic solution is to create a Google Form:
   - You may use the Google Form directly as your unsubscribe link. Be sure to use the *Preview* link.
   - If you have a website, you can redirect something like https://example.com/unsubscribe to your Google Form.
 
-*Tip for developers*: you can develop your own Unsubscribe functionality using a hash function, so users will be able to unsubscribe without having to enter their email address.
+*Tip for developers*: you can develop your own Unsubscribe functionality on your website using a hash function, so users will be able to unsubscribe without having to enter their email address.
 
 ### Replace Your Unsubscribe Link
 
