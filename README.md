@@ -19,7 +19,7 @@ The quick setup takes about 15 minutes.
 
 ### Campaign Template
 
-- Make a copy of this Campaign Template:
+- Make a copy of this campaign template:
 https://docs.google.com/document/d/1uXxxQywbfgURrwzUdSGnnHtssIzxFm2mMVk-Dr1dsh0/edit?usp=sharing
 - From the Menu: File > Make a copy...
 - Be sure to name it "*Test (T1)*".
@@ -43,7 +43,7 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
 - Congratulations! You just sent your first campaign template using MailSheet!
 
-### Enabling the Gmail API
+### Gmail API
 
 Before sending a second template, you need to enable the *Gmail API*:
 - Go to your Leads Sheet.
@@ -60,7 +60,9 @@ Before sending a second template, you need to enable the *Gmail API*:
 - Close the Google API Console tab.
 - Close the Script editor.
 
-*Observation*: if you have trouble with the Google API Console, please make sure you are opening the correct Google Account. You may need to log off from the other account(s).
+*Observation*: if you have trouble with the Google API Console, please make sure you are opening from the correct Google account. You may need to log off from the other account(s).
+
+You are now ready to send follow-up emails! But if you plan to send bulk email, please read the next section for the complete setup.
 
 ## Complete Setup
 
