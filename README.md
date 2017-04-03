@@ -124,6 +124,7 @@ A simplistic solution is to create a Google Form:
 
 ### Send the Second Template
 
+- Go to your Leads Sheet.
 - From the menu: Mail Sheet > Send campaign...
 - The MailSheet sidebar will open.
 - Select "*Test*" as the Campaign.
