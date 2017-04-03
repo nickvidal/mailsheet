@@ -15,7 +15,7 @@ Send Emails from Google Sheets
 
 ## Quick Setup
 
-The quick setup takes about 10 minutes.
+The quick setup takes about 15 minutes.
 
 ### Campaign Template
 
