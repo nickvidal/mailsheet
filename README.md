@@ -62,8 +62,6 @@ Before sending a second template, you need to enable the *Gmail API*:
 
 *Observation*: if you have trouble with the Google API Console, please make sure you are opening the correct Google Account. You may need to log off from the other account(s).
 
-You are all set to send the second template, but if you plan to send bulk email, please read the following section for the complete setup.
-
 ## Complete Setup
 
 The complete setup takes 15 more minutes.
@@ -117,7 +115,7 @@ A simplistic solution is to create a Google Form:
 > Thanks,
 
 - Paste as plain text.
-- From the Menu: Edit > Paste without formatting.
+  - From the Menu: Edit > Paste without formatting.
 - Save the document as "*Test (T2)*".
 - MailSheet provides mail merge functionality for `{{First Name}}`, `{{Last Name}}`, and `{{Lead}}`.
 
