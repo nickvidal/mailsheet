@@ -31,6 +31,9 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 - From the Menu: File > Make a copy...
 - In the first column (Owner), replace *YOUR NAME* with your name (yellow column).
 - Add a few of your contacts (green rows).
+
+### Send the First Template
+
 - From the Menu: Mail Sheet > Send campaign...
 - You'll be asked to give the appropriate permissions to MailSheet.
 - The MailSheet sidebar will open.
