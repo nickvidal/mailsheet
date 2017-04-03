@@ -15,7 +15,7 @@ Send Emails from Google Sheets
 
 ## Quick Setup
 
-The quick setup takes about 5 minutes.
+The quick setup takes about 10 minutes.
 
 ### Campaign Template
 
@@ -43,9 +43,24 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
 - Congratulations! You just sent your first campaign using MailSheet!
 
+Before sending a second template, you need to enable the Gmail API:
+- Go to your Leads Sheet.
+- Open the Script editor:
+  - From the Menu: Tools > Script editor...
+- Inside Script editor:
+  - From the Menu: Resources > Advanced Google services...
+  - Search for Gmail API and turn it ON.
+  - Click on "*These services must also be enabled in the Google API Console.*"
+- Inside the Google API Console:
+  - Click on "*Enable API*"
+  - Search for "*Gmail API*"
+  - Click on "*Enable*"
+- Close the Google API Console tab.
+- Close the Script editor.
+
 ## Complete Setup
 
-The complete setup takes a bit more work.
+The complete setup takes 15 more minutes.
 
 ### Create the Unsubscribe Link
 
@@ -65,7 +80,7 @@ A simplistic solution is to create a Google Form:
   - You may use the Google Form directly as your unsubscribe link. Be sure to use the *Preview* link.
   - If you have a website, you can redirect something like https://example.com/unsubscribe to your Google Form.
 
-*TIP FOR DEVELOPERS*: you can develop your own Unsubscribe functionality using a hash function, so users will be able to unsubscribe without having to enter their email address.
+*Tip for developers*: you can develop your own Unsubscribe functionality using a hash function, so users will be able to unsubscribe without having to enter their email address.
 
 ### Replace your Unsubscribe Link
 
@@ -95,6 +110,8 @@ A simplistic solution is to create a Google Form:
 >
 > Thanks,
 
+- Pasted as plain text.
+- From the Menu: 
 - Save the document as "*Test (T2)*".
 - MailSheet provides mail merge functionality for `{{First Name}}`, `{{Last Name}}`, and `{{Lead}}`.
 
