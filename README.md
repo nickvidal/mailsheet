@@ -13,15 +13,45 @@ Send Emails from Google Sheets
 * Send emails that appear in your **Gmail** account.
 
 
-## Setup
+## Quick Setup
 
-The setup takes about 30 minutes.
+The quick setup takes about 5 minutes.
+
+### Campaign Template
+
+- Make a copy of this Campaign Template:
+https://docs.google.com/document/d/1uXxxQywbfgURrwzUdSGnnHtssIzxFm2mMVk-Dr1dsh0/edit?usp=sharing
+- From the Menu: File > Make a copy...
+- Be sure to name it "*Test (T1)*".
+
+### Leads Sheet
+
+- Make a copy of this Spreadsheet:
+https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8xyc0/edit?usp=sharing
+- From the Menu: File > Make a copy...
+- In the first column (Owner), replace *YOUR NAME* with your name (yellow cell).
+- Add a few of your contacts (green rows).
+- From the Menu: Mail Sheet > Send campaign...
+- You'll be asked to give the appropriate permissions to MailSheet.
+- The MailSheet sidebar will open.
+- Select "*Test*" as the Campaign.
+- Select "*T1*" as the Template.
+- Enter a *Subject* for the email.
+- Click on the *Send Campaign* button.
+- Watch the *Status* get updated row by row (from "*T1*" to "*T2*").
+- Go to your Gmail and look at the *Sent Mail* folder.
+- Go to your *Inbox* and review the MailSheet email with a summary of the results.
+- Congratulations! You just sent your first campaign using MailSheet!
+
+## Complete Setup
+
+The complete setup takes a bit more work.
 
 ### Create the Unsubscribe Link
 
 When sending mass email or bulk email, you must provide an *Unsubscribe link* to comply with [CAN-SPAM](https://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
 
-A simple solution is to create a Google Form:
+A simplistic solution is to create a Google Form:
 - Create a new form called Unsubscribe on Google Forms.
 - Edit the first question to become a *Short answer text*.
 - Edit the question to something like: "*Please enter your email address below to unsubscribe*".
@@ -32,72 +62,54 @@ A simple solution is to create a Google Form:
   - The URL will look something like: `https://docs.google.com/spreadsheets/d/[YOUR UNSUBSCRIBE SHEET]/edit`
   - The Document ID is the code at `[YOUR UNSUBSCRIBE SHEET]`
 - Create an Unsubscribe Link: `[YOUR UNSUBSCRIBE LINK]`
-  - If you have a website, you can redirect something like https://example.com/unsubscribe to your Unsubscribe Form.
-  - Alternatively, you may use the Google Form directly as your unsubscribe link. Be sure to use the *Preview* link.
+  - You may use the Google Form directly as your unsubscribe link. Be sure to use the *Preview* link.
+  - If you have a website, you can redirect something like https://example.com/unsubscribe to your Google Form.
 
+Tip for developers: you can create your own Unsubscribe functionality from your website using a hash function, so users will be able to unsubscribe without having to enter their email address.
 
-### Create a Campaign
+### Replace your Unsubscribe Link
 
-The next step is to create a Campaign using Google Docs:
-- Create a new Document.
-- Copy the following text:
-
-> Hello {{First Name}},
-> 
-> Your surname is {{Last Name}} and you work at {{Lead}}.
-> 
-> Regards
-
-- Save the document as "*Test (T1)*".
-- You may make a copy as "*Test (T2)*" and another one as "*Test (T3)*".
-- MailSheet provides mail merge functionality for `{{First Name}}`, `{{Last Name}}`, and `{{Lead}}`.
-
-
-### Create the Leads Spreadsheet
-
-Finally, you are ready to create your Leads sheet. 
-
-- Create a new spreadsheet on Google Sheets
-- Add the following columns in the first row:
-  - Owner, Lead, Status, Campaign, Contacted, First Name, Last Name, Title, Email
-- Freeze the first row:
-  - Select the first row
-  - From the menu: View > Freeze > 1 row
+- Go to your Leads Sheet.
 - Open the Script editor:
   - From the menu: Tools > Script editor...
-- Create file Code.gs:
-  - Copy content from [Code.gs](https://github.com/nickvidal/mailsheet/blob/master/Code.gs)
+- Edit file Code.gs:
   - Replace the following strings:
     - `[YOUR ADDRESS]`
     - `[YOUR UNSUBSCRIBE LINK]`
     - `[YOUR UNSUBSCRIBE SHEET]`
-- Create file Campaign.html:
-  - From the menu: File > New > Html file
-  - Copy content from [Campaign.html](https://github.com/nickvidal/mailsheet/blob/master/Campaign.html)
-- Create file Style.html:
-  - From the menu: File > New > Html file
-  - Copy content from [Style.html](https://github.com/nickvidal/mailsheet/blob/master/Style.html)
-- Save all files and close the Script editor.
-- Enter some data in the Leads sheet.
-- Under Campaign, fill in the campaign name: "*Test*"
-- Under Status, enter: "*T1*"
+  - Uncomment the changed lines (by deleting the preceding `//`)
+- Save the file and close the Script editor.
 
-### Send a Campaign
+### Create Template 2
 
-Let's send your first campaign!
+- Go to Google Docs and create a new document.
+- Copy the following text:
 
-- Please reload your Leads sheet.
-- You'll be asked to give the appropriate permissions to MailSheet.
+> Hi {{First Name}},
+> 
+> MailSheet supports threaded conversations.
+> 
+> Want to give it a try and help me test it?
+>
+> https://github.com/nickvidal/mailsheet
+>
+> Thanks,
+
+- Save the document as "*Test (T2)*".
+- MailSheet provides mail merge functionality for `{{First Name}}`, `{{Last Name}}`, and `{{Lead}}`.
+
+
+### Send Template 2
+
 - From the menu: Mail Sheet > Send campaign...
 - The MailSheet sidebar will open.
 - Select "*Test*" as the Campaign.
-- Select "*T1*" as the Template.
-- Enter a *Subject* for the email.
+- Select "*T2*" as the Template.
+- Since this is a follow-up, you may leave the *Subject* blank.
 - Click on the *Send Campaign* button.
-- Watch the *Status* get updated row by row (from "*T1*" to "*T2*").
+- Watch the *Status* get updated row by row (from "*T2*" to "*T3*").
 - Go to your Gmail and look at the *Sent Mail* folder.
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
-- If you send the second and third templates ("*T2*" and "*T3*"), the emails will show up as a threaded conversation.
 
 ### Conclusion
 
