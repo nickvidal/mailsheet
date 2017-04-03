@@ -41,15 +41,15 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 - Watch the *Status* get updated row by row (from "*T1*" to "*T2*").
 - Go to your Gmail and look at the *Sent Mail* folder.
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
-- Congratulations! You just sent your first campaign using MailSheet!
+- Congratulations! You just sent your first campaign template using MailSheet!
 
 ### Enabling the Gmail API
 
 Before sending a second template, you need to enable the *Gmail API*:
 - Go to your Leads Sheet.
-- Open the Script editor:
+- Open the Script Editor:
   - From the Menu: Tools > Script editor...
-- Inside the Script editor:
+- Inside the Script Editor:
   - From the Menu: Resources > Advanced Google services...
   - Search for Gmail API and turn it ON.
   - Click on "*These services must also be enabled in the Google API Console.*"
@@ -60,9 +60,9 @@ Before sending a second template, you need to enable the *Gmail API*:
 - Close the Google API Console tab.
 - Close the Script editor.
 
-*Observation*: if you have trouble with the Google API Console, please make sure you are opening the correct Google Account. You might need to log off from the other account(s).
+*Observation*: if you have trouble with the Google API Console, please make sure you are opening the correct Google Account. You may need to log off from the other account(s).
 
-You are all set to send the second template. But if you plan to send bulk email, please read the following section for the *Complete Setup*.
+You are all set to send the second template, but if you plan to send bulk email, please read the following section for the complete setup.
 
 ## Complete Setup
 
@@ -116,8 +116,8 @@ A simplistic solution is to create a Google Form:
 >
 > Thanks,
 
-- Pasted as plain text.
-- From the Menu: 
+- Paste as plain text.
+- From the Menu: Edit > Paste without formatting.
 - Save the document as "*Test (T2)*".
 - MailSheet provides mail merge functionality for `{{First Name}}`, `{{Last Name}}`, and `{{Lead}}`.
 
