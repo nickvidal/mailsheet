@@ -29,7 +29,7 @@ https://docs.google.com/document/d/1uXxxQywbfgURrwzUdSGnnHtssIzxFm2mMVk-Dr1dsh0/
 - Make a copy of this Spreadsheet:
 https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8xyc0/edit?usp=sharing
 - From the Menu: File > Make a copy...
-- In the first column (Owner), replace *YOUR NAME* with your name (yellow cell).
+- In the first column (Owner), replace *YOUR NAME* with your name (yellow column).
 - Add a few of your contacts (green rows).
 - From the Menu: Mail Sheet > Send campaign...
 - You'll be asked to give the appropriate permissions to MailSheet.
@@ -65,7 +65,7 @@ A simplistic solution is to create a Google Form:
   - You may use the Google Form directly as your unsubscribe link. Be sure to use the *Preview* link.
   - If you have a website, you can redirect something like https://example.com/unsubscribe to your Google Form.
 
-Tip for developers: you can create your own Unsubscribe functionality from your website using a hash function, so users will be able to unsubscribe without having to enter their email address.
+*TIP FOR DEVELOPERS*: you can develop your own Unsubscribe functionality using a hash function, so users will be able to unsubscribe without having to enter their email address.
 
 ### Replace your Unsubscribe Link
 
@@ -110,6 +110,7 @@ Tip for developers: you can create your own Unsubscribe functionality from your 
 - Watch the *Status* get updated row by row (from "*T2*" to "*T3*").
 - Go to your Gmail and look at the *Sent Mail* folder.
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
+- Congratulations! You are all set!
 
 ### Conclusion
 
