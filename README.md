@@ -26,7 +26,7 @@ https://docs.google.com/document/d/1uXxxQywbfgURrwzUdSGnnHtssIzxFm2mMVk-Dr1dsh0/
 
 ### Create the Leads Sheet
 
-- Make a copy of this Spreadsheet:
+- Make a copy of this spreadsheet:
 https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8xyc0/edit?usp=sharing
 - From the Menu: File > Make a copy...
 - In the first column (Owner), replace *YOUR NAME* with your name (yellow column).
