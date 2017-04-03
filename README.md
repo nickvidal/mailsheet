@@ -17,14 +17,14 @@ Send Emails from Google Sheets
 
 The quick setup takes about 15 minutes.
 
-### Campaign Template
+### Create the First Template
 
 - Make a copy of this campaign template:
 https://docs.google.com/document/d/1uXxxQywbfgURrwzUdSGnnHtssIzxFm2mMVk-Dr1dsh0/edit?usp=sharing
 - From the Menu: File > Make a copy...
 - Be sure to name it "*Test (T1)*".
 
-### Leads Sheet
+### Create the Leads Sheet
 
 - Make a copy of this Spreadsheet:
 https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8xyc0/edit?usp=sharing
@@ -43,7 +43,7 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
 - Congratulations! You just sent your first campaign template using MailSheet!
 
-### Gmail API
+### Enable the Gmail API
 
 Before sending a second template, you need to enable the *Gmail API* to support threaded conversations:
 - Go to your Leads Sheet.
@@ -62,15 +62,13 @@ Before sending a second template, you need to enable the *Gmail API* to support 
 
 *Observation*: if you have trouble with the Google API Console, please make sure you are opening from the correct Google account. You may need to log off from the other account(s).
 
-You are now ready to send emails with support for threaded conversations!
-
 If you plan to send bulk email, please read the next section for the complete setup.
 
 ## Complete Setup
 
 The complete setup takes 15 more minutes.
 
-### Create the Unsubscribe Link
+### Create Your Unsubscribe Link
 
 When sending mass email or bulk email, you must provide an *Unsubscribe link* to comply with [CAN-SPAM](https://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
 
@@ -90,7 +88,7 @@ A simplistic solution is to create a Google Form:
 
 *Tip for developers*: you can develop your own Unsubscribe functionality using a hash function, so users will be able to unsubscribe without having to enter their email address.
 
-### Replace your Unsubscribe Link
+### Replace Your Unsubscribe Link
 
 - Go to your Leads Sheet.
 - Open the Script editor:
@@ -103,7 +101,7 @@ A simplistic solution is to create a Google Form:
   - Uncomment the changed lines (by deleting the preceding `//`)
 - Save the file and close the Script editor.
 
-### Create Template 2
+### Create the Second Template
 
 - Go to Google Docs and create a new document.
 - Copy the following text:
@@ -124,7 +122,7 @@ A simplistic solution is to create a Google Form:
 - MailSheet provides mail merge functionality for `{{First Name}}`, `{{Last Name}}`, and `{{Lead}}`.
 
 
-### Send Template 2
+### Send the Second Template
 
 - From the menu: Mail Sheet > Send campaign...
 - The MailSheet sidebar will open.
