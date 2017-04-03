@@ -43,11 +43,13 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
 - Congratulations! You just sent your first campaign using MailSheet!
 
-Before sending a second template, you need to enable the Gmail API:
+### Enabling the Gmail API
+
+Before sending a second template, you need to enable the *Gmail API*:
 - Go to your Leads Sheet.
 - Open the Script editor:
   - From the Menu: Tools > Script editor...
-- Inside Script editor:
+- Inside the Script editor:
   - From the Menu: Resources > Advanced Google services...
   - Search for Gmail API and turn it ON.
   - Click on "*These services must also be enabled in the Google API Console.*"
@@ -57,6 +59,10 @@ Before sending a second template, you need to enable the Gmail API:
   - Click on "*Enable*"
 - Close the Google API Console tab.
 - Close the Script editor.
+
+*Observation*: if you have trouble with the Google API Console, please make sure you are opening the correct Google Account. You might need to log off from the other account(s).
+
+You are all set to send the second template. But if you plan to send bulk email, please read the following section for the *Complete Setup*.
 
 ## Complete Setup
 
