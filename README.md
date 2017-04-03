@@ -45,7 +45,7 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 
 ### Gmail API
 
-Before sending a second template, you need to enable the *Gmail API*:
+Before sending a second template, you need to enable the *Gmail API* to support threaded conversations:
 - Go to your Leads Sheet.
 - Open the Script Editor:
   - From the Menu: Tools > Script editor...
@@ -62,7 +62,9 @@ Before sending a second template, you need to enable the *Gmail API*:
 
 *Observation*: if you have trouble with the Google API Console, please make sure you are opening from the correct Google account. You may need to log off from the other account(s).
 
-You are now ready to send follow-up emails! But if you plan to send bulk email, please read the next section for the complete setup.
+You are now ready to send emails with support for threaded conversations!
+
+If you plan to send bulk email, please read the next section for the complete setup.
 
 ## Complete Setup
 
