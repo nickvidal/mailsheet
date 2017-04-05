@@ -67,9 +67,6 @@ function sendEmails(campaign, template, subject) {
   
   var logSent = Array();
   var logFailed = Array();
-  
-  var doc = DriveApp.getFilesByName(campaign + " (" + template + ")");
-  var docId = doc.hasNext() ? doc.next().getId() : 0;
 
   var contacted = getDateString();
   
@@ -86,6 +83,9 @@ function sendEmails(campaign, template, subject) {
       nextStatus = "T4";
     break;
   }
+
+  var doc = DriveApp.getFilesByName(campaign + " (" + template + ")");
+  var docId = doc.hasNext() ? doc.next().getId() : 0;
   
   if (docId == 0) {
     // Template missing
