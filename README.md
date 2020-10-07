@@ -78,7 +78,7 @@ When sending mass email or bulk email, you must provide an *Unsubscribe link* to
 A simplistic solution is to create a Google Form:
 - Create a new form called Unsubscribe on Google Forms.
 - Edit the first question to become a *Short answer text*.
-- Edit the question to something like: "*Please enter your email address below to unsubscribe*".
+- Edit the question to something like: "*Email address to unsubscribe*".
 - From the menu: Responses > ... > Select response destination > Create a new spreadsheet.
 - From the menu: Responses > View responses in Sheets.
 - In the Unsubscribe sheet, add a third column called "*Status*".
@@ -86,10 +86,8 @@ A simplistic solution is to create a Google Form:
   - The URL will look something like: `https://docs.google.com/spreadsheets/d/[YOUR UNSUBSCRIBE SHEET]/edit`
   - The Document ID is the code at `[YOUR UNSUBSCRIBE SHEET]`
 - Create an Unsubscribe Link: `[YOUR UNSUBSCRIBE LINK]`
-  - You may use the Google Form directly as your unsubscribe link. Be sure to use the *Preview* link.
+  - You may use the Google Form directly as your unsubscribe link. Be sure to use the *Pre-filled* link unique to each email address.
   - If you have a website, you can redirect something like https://example.com/unsubscribe to your Google Form.
-
-*Tip for developers*: you can develop your own Unsubscribe functionality on your website using a hash function, so users will be able to unsubscribe without having to enter their email address.
 
 ### Replace Your Unsubscribe Link
 
