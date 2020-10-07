@@ -153,7 +153,7 @@ function sendEmail(row, docId, subject) {
   body += "\r" + myFirstName + "\r\r\r\r" +
           "--\r" +
           "[YOUR ADDRESS]\r\r" +
-          "To unsubscribe: [YOUR UNSUBSCRIBE LINK]";
+          "To unsubscribe: [YOUR UNSUBSCRIBE LINK]" + email;
 
   if (status != "T1") {
     // Reply
