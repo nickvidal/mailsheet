@@ -86,8 +86,9 @@ A simplistic solution is to create a Google Form:
   - The URL will look something like: `https://docs.google.com/spreadsheets/d/[YOUR UNSUBSCRIBE SHEET]/edit`
   - The Document ID is the code at `[YOUR UNSUBSCRIBE SHEET]`
 - Create an Unsubscribe Link: `[YOUR UNSUBSCRIBE LINK]`
-  - You may use the Google Form directly as your unsubscribe link. Be sure to use the *Pre-filled* link unique to each email address.
-  - If you have a website, you can redirect something like https://example.com/unsubscribe to your Google Form.
+  - You may use the Google Form directly as your unsubscribe link.
+  - Be sure to use the *Get the pre-filled link* and delete just the email address from the link so that the appropriate email to be unsubscribed will be appended.
+  - If you have a website, you can redirect something like https://example.com/unsubscribe?entry=email to your Google Form.
 
 ### Replace Your Unsubscribe Link
 
