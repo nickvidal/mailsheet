@@ -56,7 +56,7 @@ Before sending a second template, you need to enable the *Gmail API* to support 
   - From the Menu: Resources > Advanced Google services...
   - Search for Gmail API and turn it ON.
 - Click on "*Enable API*" on the Google API Console:
-https://console.cloud.google.com/apis/library/gmail.googleapis.com)
+https://console.cloud.google.com/apis/library/gmail.googleapis.com
 - Close the Google API Console tab.
 - Close the Script editor.
 
