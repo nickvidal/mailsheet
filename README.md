@@ -37,7 +37,7 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 - From the Menu: Mail Sheet > Send campaign...
 - You'll be asked to give the appropriate permissions to MailSheet.
 - The MailSheet sidebar will open.
-- Select "*Test*" as the Campaign*.
+- Select "*Test*" as the Campaign (see troubleshooting below).
 - Select "*T1*" as the Template.
 - Enter a *Subject* for the email.
 - Click on the *Send Campaign* button.
@@ -46,7 +46,7 @@ https://docs.google.com/spreadsheets/d/1va32yPCK0D1dMkz2ZtIQbnKyobgc13sDnBO_8M8x
 - Go to your *Inbox* and review the MailSheet email with a summary of the results.
 - Congratulations! You just sent your first campaign template using MailSheet!
 
-* If you are unable to select "*Test*" as the Campaign, you might be experiencing a conflict between your Google accounts. Try reopening the spreadsheet in a new *Incognito/Private* window.
+*Troubleshooting*: If you are unable to select "*Test*" as the Campaign, you might be experiencing a conflict between your Google accounts. Try reopening the spreadsheet in a new *Incognito/Private* window.
 
 ### Enable the Gmail API
 
