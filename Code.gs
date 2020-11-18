@@ -150,9 +150,9 @@ function sendEmail(row, docId, subject) {
   body = body.replace(/{{First Name}}/gi, firstName);
   body = body.replace(/{{Last Name}}/gi, lastName);
     
-  body += "\r" + myFirstName + "\r\r\r\r" +
-          "--\r" +
-          "[YOUR ADDRESS]\r\r" +
+  body += "\r" + myFirstName + "\r\n\r\n" +
+          "--\r\n" +
+          "[YOUR ADDRESS]\r\n" +
           "To unsubscribe: [YOUR UNSUBSCRIBE LINK]" + email;
 
   if (status != "T1") {
